@@ -5,11 +5,64 @@
 }
 body{
     min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: hsl(218, 23%, 16%);
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 24%);
+    text-align: center;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+picture :last-child{
+    display: none;
+}
+p{
+    color: hsl(150, 100%, 66%);
+    font-size: .4em;
+    letter-spacing: 4px;
+    margin-bottom: 2em;
+}
+h1{
+    font-size: 1em;
+}
+button{
+    width: 4em;
+    padding: 0;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    border: none;
+    border-radius: 100px;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+button:focus{
+    outline: 1px solid hsl(151, 100%, 79%);
 }
 
-
-
-
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0;}
 .attribution a { color: hsl(228, 45%, 44%); }
